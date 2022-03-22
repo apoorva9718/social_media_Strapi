@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "posts",
+  "info": {
+    "singularName": "post",
+    "pluralName": "posts",
+    "displayName": "Post",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Pid": {
+      "type": "uid"
+    },
+    "post_format": {
+      "type": "string"
+    },
+    "post_description": {
+      "type": "text"
+    },
+    "likes": {
+      "type": "integer"
+    },
+    "shares": {
+      "type": "integer"
+    },
+    "comments": {
+      "type": "integer"
+    },
+    "privacy": {
+      "type": "boolean"
+    },
+    "posted_at": {
+      "type": "datetime"
+    },
+    "Uid": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::socio-user.socio-user"
+    }
+  }
+}

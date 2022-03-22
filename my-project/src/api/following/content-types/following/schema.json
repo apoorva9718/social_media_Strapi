@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "followings",
+  "info": {
+    "singularName": "following",
+    "pluralName": "followings",
+    "displayName": "Following",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "followed_at": {
+      "type": "datetime"
+    },
+    "status": {
+      "type": "boolean"
+    },
+    "Uid": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::socio-user.socio-user"
+    },
+    "Fwid": {
+      "type": "uid"
+    }
+  }
+}

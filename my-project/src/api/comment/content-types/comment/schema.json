@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "comments",
+  "info": {
+    "singularName": "comment",
+    "pluralName": "comments",
+    "displayName": "Comment",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Cid": {
+      "type": "uid"
+    },
+    "Uid": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::socio-user.socio-user"
+    },
+    "comments": {
+      "type": "text"
+    },
+    "comment_likes": {
+      "type": "integer"
+    },
+    "privacy": {
+      "type": "boolean"
+    },
+    "posted_at": {
+      "type": "datetime"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "socio_users",
+  "info": {
+    "singularName": "socio-user",
+    "pluralName": "socio-users",
+    "displayName": "socio_user",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Uid": {
+      "type": "uid"
+    },
+    "DOB": {
+      "type": "date"
+    },
+    "user_name": {
+      "type": "string"
+    },
+    "full_name": {
+      "type": "string"
+    },
+    "email_id": {
+      "type": "email"
+    },
+    "password_": {
+      "type": "password"
+    },
+    "mobile": {
+      "type": "string"
+    },
+    "gender": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "createdat": {
+      "type": "datetime"
+    }
+  }
+}
